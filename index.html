@@ -11,42 +11,125 @@
 	
 </head>
 <style>
-		body {background-color: rgb(201, 206, 111);
+		body {background-color: rgb(205, 221, 139);
 			font-family: serif;
 			font-style: italic;
 			font-size: 25px;
 			margin-right: 100px;
 			margin-left: 100px;
+			margin: 0;
+			padding: 0;
+		}
+		.container{
+			width: 70vw;	
+			background-color: rgb(205, 221, 139);
+			margin-left: auto;
+			margin-right: auto;		
+			display: flex;
+			margin-top: -7px;
+		}
+		.reklama{
+			width: 100%;
+		}
+		.cukiereczki{
+			width: 35%;
+			background-color: rgb(205, 221, 139);
+		}
+		.menu{
+			width: 450px;
+			height: 630px;
+			background-color: rgb(68, 162, 232);
+			color:white;
+		}
+		.text{
+			padding: 0 20px;
+			height: 100%;
 			
+		}
+		.table{
+			margin-left: auto;
+			margin-right: auto;
+			width: 100%;
+			text-align:center;
+		}
+		.footer{
+			width: 80vw;
+			margin-left: auto;
+			margin-right: auto;		
+			background-color:rgb(51, 83, 78);
+			text-align: center;
+			padding: 20px 0;
+		}
+		.img{
+			width: 70vw;
+		}
+		.klasy{
+			font-size:42px;
+		}
+		.footer{
+			padding-top:10px;
+			margin-top:20px;
+			height:20px;
+			width:1400px;
+			color:white;
+		}
+		.link{
+			color:white;
 		}
 		ul {list-style-type: square;}
 		h1 {text-align: center;}
 		h2 {text-align: center;}
-		h3 {color:rgb(120, 50, 0);}
+		h3 {color:rgb(223, 37, 37);}
 		h4 {text-align: center;}
 		.przedmioty {color:rgb(54, 29, 150);}
-		.dd {color:rgb(54, 29, 194);}
-		#1 {color:rgb(150, 0, 0);
+		/* .dd {color:rgb(54, 29, 194);}
+		#1 {color:rgb(209, 197, 197);
 			font-size: 1.5em;}
-		#2 {color:rgb(150, 0, 0);
+		#2 {color:rgb(209, 197, 197);
 			font-size: 1.1em;}
-		#3 {color:rgb(150, 0, 0);
+		#3 {color:rgb(209, 197, 197);
 			font-size: 1.5em;}
-		li {color:rgb(100, 55, 20);
+		li {color:rgb(100, 55, 20); */
 			font-family:sans-serif;
 			line-height: 1.5em;}
 		#plan {color:green;}
 			table, th, td {
   border: 1px solid black;
+  
 }
+	#!{
+		color:white;
+	}
+
+	#plan{
+		font-size:50px;
+		font-weight:bold;
+		
+	}
+	
+	
 	</style>
 
 <body>
-	<div style="text-align: center"><img src="grafika do strony.png" alt="Zdjęcia związane z tym profilem"></div>
-	<h1>Rekrutacja do klasy <strong id="1">1D</strong></h1>
-	<h2><strong id="3">1D</strong> -rozszerzone treści nauczania z <strong class="przedmioty">matematyki</strong>, <strong class="przedmioty">geografii</strong>, <strong class="przedmioty"></r>języka angielskiego</strong></h2>
-	<h3>Powinieneś wybrać klasę o takim nachyleniu przedmiotowym, jeśli: </h3>
-	<ul>
+	<div style="text-align: center"><img class="img"src="grafika do strony.png" alt="Zdjęcia związane z tym profilem"></div>
+	<div class="container">
+		<div class="menu">
+			<ul class="klasy">
+				<a class="link" href="1A.html">1A</a> <br> <br>
+				<a class="link" href="1B.html">1B</a> <br> <br>
+				<a class="link" href="1C.html">1C</a> <br> <br>
+				<a class="link" href="index.html">1D</a> <br> <br>
+				<a class="link" href="1E.html">1E</a> <br> <br>
+				<a class="link" href="1F.html">1F</a> <br> <br>
+
+			</ul>
+		</div>
+		<div class="text">
+			
+		<h1>Rekrutacja do klasy <strong id="1">1D</strong></h1>
+		<h2><strong id="3">1D</strong> -rozszerzone treści nauczania z <strong class="przedmioty">matematyki</strong>, <strong 	class="przedmioty">geografii</strong>, <strong class="przedmioty"></r>informatyki</strong></h2>
+		<h3>Powinieneś wybrać klasę o takim nachyleniu przedmiotowym, jeśli: </h3>
+		<ul id="jd">
 		<li>pragniesz pogłębiać wiedzę i umiejętności z  zakresu geografii i matematyki;</li>
 		<li>interesują Cię takie kierunki studiów jak geodezja, geoinformatyka, gospodarka przestrzenna, budownictwo, ochrona środowiska, turystyka i rekreacja;</li>
 		<li>marzysz o studiowaniu na  <strong>AGH</strong>, <Strong>SGGW</Strong>, <Strong>Politechnice Krakowskiej</Strong>, <Strong>Politechnice Warszawskiej</Strong>, <Strong>Politechnice Wrocławskiej</Strong>, <Strong>Akademii Ekonomicznej</Strong>;</li>
@@ -57,9 +140,9 @@ na poziomie rozszerzonym</li>
 	</ul>
 	<h4>Przy rekrutacji do klasy <strong id="2">1D</strong> przedmioty punktowane to: <em class="dd">język polski</em>, <em class="dd">matematyka</em>, <em class="dd">język obcy</em>, <em class="dd">historia</em>/<em class="dd">fizyka</em>/<em class="dd">biologia</em>/<em class="dd">geografia</em>/<em class="dd">chemia</em>.</h4>
 	<h4 id="plan">Plan nauczania 1D</h4>
-    <table>
+    	<table class="table">
         <thead>
-            <tr> <th> Przedmiot <th>Rok 1 <th>Rok 2 <th>Rok 3 <th>Rok 4
+            <tr><th> Przedmiot  <th>Rok 1 <th>Rok 2 <th>Rok 3 <th> Rok 4 <thead>
         <tbody>
             <tr> <th> j.polski <td> 4 <td> 4 <td> 4 <td> 4
             <tr> <th> j.angielski <td> 3 <td> 3 <td> 3 <td> 3
@@ -83,6 +166,15 @@ na poziomie rozszerzonym</li>
             <tr> <th> doradz. zaw. <td> 2r <td> 2r <td> 3r <td> 3r
             <tr> <th> r_matematyka <td>2 <td>3 <td>3 <td> 2;1dyr
             <tr> <th> r_geografia <td> 1<td> 1<td> 2<td> 4;1dyr
-            <tr> <th> r_angielski <td>1 <td> 1<td> 2<td> 3;1dyr
+            <tr> <th> r_angielski <td>1 <td> 1<td> 2 <td>3;1dyr<tbody>
+			</table>
+		</div>
+		<div class="cukiereczki">
+			<img class="reklama" src="./reklama.jpg" alt="tu se jest zdj">
+		</div>
+	</div>
+	<div class="footer">
+		SLO- rekrutacja! © Wszelkie prawa zastrzeżone - Skrzypek Paweł 	
+	</div>
 </body>
 </html>
